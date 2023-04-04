@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- bs -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark mb-3">
+      <div class="container">
+        <a href="/" class="navbar-brand">Github Bulucu</a>
+      </div>
+    </nav>
+
+    <div class="container searchContainer">
+      <div id="alert"></div>
+
+      <div class="seacrh card card-body">
+        <h1>Github Kullanıcı Adını Ara</h1>
+        <p class="lead">
+          Kulanıcı bilgilerine erişmek için bir kullanıcı adı gir
+        </p>
+        <div class="d-flex gap-3">
+          <input
+            type="text"
+            id="searchUser"
+            class="form-control"
+            placeholder="Github Kullanıcı adı..."
+          />
+          <button class="btn btn-primary btn-lg" id="searchButton">Ara</button>
+        </div>
+      </div>
+    </div>
+    <div id="profile"></div>
+
+    <!-- bs js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+
+    <!-- kendi jslerimiz -->
+
+    <script src="github.js"></script>
+    <script src="ui.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
